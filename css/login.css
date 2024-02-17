@@ -1,0 +1,47 @@
+.section-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #bbadad85;
+  width: 43%;
+  height: 43%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.section-form h2 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: #5c5abb;
+  margin: 17px 0px;
+}
+
+.section-form input {
+  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  margin: 5px auto;
+  width: 70%;
+  border: 1px solid rgba(221, 221, 221, 0.637);
+  height: 30px;
+  justify-content: center;
+  padding: 8px;
+  font-size: 11px;
+  outline: 0;
+}
+
+.section-form input[type="submit"] {
+  font-size: 15px;
+  height: auto;
+  color: #161616de;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.section-form input[type="submit"]:hover {
+  opacity: 0.8;
+  background-color: #5c5abb;
+  transition: all 0.4s ease-in-out;
+}
