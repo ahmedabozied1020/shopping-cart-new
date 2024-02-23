@@ -11,10 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="\css\style.css" />
   </head>
   <body>
     <header>
+      <!-- <i class="fa-solid fa-cart-shopping"></i> -->
       <div class="container">
         <div class="header-content">
           <a href="index.html" class="brand"> Shopping cart </a>
@@ -30,25 +35,24 @@
               <ul id="logout">
                 <li><a href="#" id="logout_user">LogOut</a></li>
               </ul>
+              <ul class="display-items">
+                <li class="natification">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="badge"></span>
+                </li>
+                <div class="carts-products">
+                  <div></div>
+                    <a href="/html/cardproduct.html"> View All Products <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </ul>
             </div>
           </nav>
         </div>
       </div>
     </header>
-    https://github.com/ahmedabozied1020
     <section class="home">
-      <div class="container_home">
-        <div class="product">
-          <div class="product__item">
-            <img class="product-item1" src="img/img1.jfif" alt="images1" />
-          </div>
-          <div class="title_product">
-            <h2>hp Laptop</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <span> size: Large</span>
-          </div>
-        </div>
-      </div>
+      <div class="container_home"></div>
     </section>
     <script src="js/script.js"></script>
   </body>

@@ -4,39 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>shopping cart | Login Page</title>
+    <title>shopping cart</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="\css\style.css" />
-    <link rel="stylesheet" href="\css\login.css" />
   </head>
   <body>
     <header>
+      <!-- <i class="fa-solid fa-cart-shopping"></i> -->
       <div class="container">
         <div class="header-content">
           <a href="index.html" class="brand"> Shopping cart </a>
           <nav>
-            <ul>
+            <ul id="links">
               <li><a href="login.html">Sign In</a></li>
               <li><a href="register.html">Sign Up</a></li>
             </ul>
+            <div class="signin_block">
+              <ul id="user_info">
+                <li><a href="#" id="user"></a></li>
+              </ul>
+              <ul id="logout">
+                <li><a href="#" id="logout_user">LogOut</a></li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>
     </header>
-    <section class="section-form">
-      <h2>Login User</h2>
-      <form action="active">
-        <input type="text" placeholder="Enter Username .." id="username" />
-        <input type="password" placeholder="Enter Password .." id="password" />
-        <input type="submit" value="Sign In" id="sign_in" />
-         Not Have Account? <a href="register.html"> Register</a>
-      </form>
-    </section>
-    <script src="js/login.js"></script>
+    <section class="section-form">Card Product</section>
+    <script src="js/script.js"></script>
   </body>
 </html>
