@@ -78,20 +78,21 @@ function drawProducts() {
 
 drawProducts();
 
-function checkLogedInUser() {
+let addItemToPage = [];
+function addToCart(id) {
   if (localStorage.getItem("username")) {
-    console.log("added to card");
+    let choosenItem = products.find((item) => item.id === id);
+    cartProductDomDiv.innerHTML += `<p> ${choosenItem.title}</p> `;
+
+    addItemToPage = [...addItemToPage, choosenItem];
+    localStorage.setItem("productInCart", JSON.stringify(addItemToPage));
+
+    let cardProductsLength = document.querySelectorAll(".carts-products div p");
+    natificationBadge.style.display = "block";
+    natificationBadge.innerHTML = cardProductsLength.length;
   } else {
     window.location = "login.html";
   }
-}
-
-function addToCart(id) {
-  let choosenItem = products.find((item) => item.id === id);
-  cartProductDomDiv.innerHTML += `<p> ${choosenItem.title}</p> `;
-  let cardProductsLength = document.querySelectorAll(".carts-products div p");
-  natificationBadge.style.display = "block";
-  natificationBadge.innerHTML = cardProductsLength.length;
 }
 
 displayItems.addEventListener("click", () => {
